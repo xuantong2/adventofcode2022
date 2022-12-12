@@ -7,7 +7,7 @@ const MatrixRotate = matrix => matrix.map((row, rowIndex) =>
     row.map((_, colIndex) => matrix[colIndex][rowIndex]).reverse()
 );
 
-const rawData = fs.readFileSync(new URL('./input.txt', import.meta.url).pathname);
+const rawData = fs.readFileSync('8in.txt');
 
 let treeHeights = rawData.toString().split('\n').filter(Boolean).map(row => row.split('').map(t => parseInt(t, 10)));
 

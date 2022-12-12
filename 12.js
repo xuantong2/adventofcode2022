@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const rawData = fs.readFileSync(new URL('./input.txt', import.meta.url).pathname);
+const rawData = fs.readFileSync('12in.txt');
 
 const map = rawData.toString().split('\n').filter(Boolean).map(r => r.split(''));
 

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const rawData = fs.readFileSync(new URL('./input.txt', import.meta.url).pathname).toString().split('\n').filter(Boolean);
+const rawData = fs.readFileSync('11in.txt').toString().split('\n').filter(Boolean);
 
 const monkeys = [];
 

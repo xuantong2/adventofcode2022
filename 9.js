@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const rawData = fs.readFileSync(new URL('./input.txt', import.meta.url).pathname);
+const rawData = fs.readFileSync('9in.txt');
 
 const commands = rawData
     .toString()
@@ -48,5 +48,5 @@ knots.slice(0, 9).forEach((knot, knotIndex) => {
 const unique1 = new Set(knots[1].map(coords => coords[0] + ',' + coords[1]));
 const unique9 = new Set(knots[9].map(coords => coords[0] + ',' + coords[1]));
 
-console.log('Unique coords for knot 1: ', unique1.size);
-console.log('Unique coords for knot 9: ', unique9.size);
+console.log('Unique coords for knot 1:', unique1.size);
+console.log('Unique coords for knot 9:', unique9.size);

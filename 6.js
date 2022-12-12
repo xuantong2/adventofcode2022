@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const rawData = fs.readFileSync(new URL('./input.txt', import.meta.url).pathname).toString();
+const rawData = fs.readFileSync('6in.txt').toString();
 
 const dataArray = Array.from(rawData);
 
